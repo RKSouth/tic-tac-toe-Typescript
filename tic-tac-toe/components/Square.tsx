@@ -8,7 +8,9 @@ function Square({
     if(!value) {
         return <button onClick={onClick}disabled = {Boolean(winner)}/>
     }
-    return <button disabled>{value}</button>
+    return <button 
+    className={`square square_${value.toLocaleLowerCase()}`}
+    disabled>{value}</button>
 }
 
 export default Square;

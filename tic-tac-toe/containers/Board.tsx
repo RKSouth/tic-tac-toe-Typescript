@@ -23,6 +23,7 @@ function Board() {
     return (
         <div>
             <p>Hey {currentPlayer}, it's your turn</p>
+           <div className='grid'>
             {Array(9).fill(null).map((_, i) => {
                 return <Square 
                     winner = {winner}
@@ -31,6 +32,7 @@ function Board() {
                     value={squares[i]}
                 />
             })}
+            </div>
         </div>
     )
 }
