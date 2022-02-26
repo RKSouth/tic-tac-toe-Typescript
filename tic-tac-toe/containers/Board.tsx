@@ -8,6 +8,12 @@ function Board() {
     )
     const [winner, setWinner] = useState(null)
     
+    function reset(){
+        setSquares(Array(9).fill(null));
+        setWinner(null);
+        setCurrentPlayer(Math.round(Math.random() * 1) === 1 ? 'x' : 'o');
+    }
+
     function setSquareValue(index) {
         const newData = squares.map((val, i) => {
             if(i === index) {
@@ -33,6 +39,7 @@ function Board() {
                 />
             })}
             </div>
+            <button className='reset' onClick={reset}>Reset</button>
         </div>
     )
 }

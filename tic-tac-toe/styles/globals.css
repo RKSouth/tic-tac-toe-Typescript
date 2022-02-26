@@ -8,7 +8,7 @@
   width:100px;
   height: 100px;
   font-size: 5rem;
-  /* background-color:blanchedalmond; */
+ color:blanchedalmond;
   border: solid 1px black;
 }
 
@@ -26,6 +26,16 @@
 
 .square_x{
   background-color: crimson;
+}
+
+.reset {
+  margin-top: 2rem;
+  font-size: 2rem;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 6 px;
+  padding: 1rem ;
+  cursor: pointer;
 }
 
 p {
